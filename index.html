@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de visite 3D</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        model-viewer {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer 
+        src="./CVAD.glb" 
+        alt="Carte de visite 3D" 
+        auto-rotate 
+        camera-controls 
+        background-color="#ffffff">
+    </model-viewer>
+</body>
+</html>
